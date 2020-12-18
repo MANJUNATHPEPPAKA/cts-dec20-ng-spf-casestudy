@@ -1,0 +1,33 @@
+<p>login works!</p>
+
+<div>
+<form #loginForm="ngForm" (ngSubmit)="handleLogin(loginForm.value)">
+<div class="container">
+
+    <div class="row">
+
+
+
+<div class="col-3">Enter the number</div>
+<div class="col-5"><input type="number" name="id" [(ngModel)]="id" required></div>
+
+    </div>
+    <div class="row">
+
+
+
+        <div class="col-3">Enter the password</div>
+        <div class="col-3"><input type="password" name="password" [(ngModel)]="password" required></div>
+        
+            </div><br/>
+            <input type="submit" value="login" class="btn btn-info">
+
+
+
+
+
+
+
+
+        </div>
+    </form></div>
